@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amoblados VGB</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f5f5dc; /* Beige */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: #5d4037; /* Marrón oscuro */
+    }
+    .navbar a {
+      color: #fff !important;
+    }
+    .btn-custom {
+      background-color: #a1887f;
+      color: #fff;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: #6d4c41;
+      color: #fff;
+    }
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: #5d4037;
+      color: #fff;
+      padding: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">Amoblados VGB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#colores">Colores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#maderas">Maderas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#local">Local</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/500?random=1" class="d-block w-100" alt="Muebles 1">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/500?random=2" class="d-block w-100" alt="Muebles 2">
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/500?random=3" class="d-block w-100" alt="Muebles 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Sección Modelos -->
+  <section id="modelos" class="container py-5">
+    <h2 class="text-center mb-4">Nuestros Modelos</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/400/250?random=10" class="card-img-top" alt="Modelo 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Juego de Comedor</h5>
+            <p class="card-text">Elegancia y resistencia para tu hogar.</p>
+            <a href="#" class="btn btn-custom">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/400/250?random=11" class="card-img-top" alt="Modelo 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Dormitorio</h5>
+            <p class="card-text">Confort y diseño en cada detalle.</p>
+            <a href="#" class="btn btn-custom">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://picsum.photos/400/250?random=12" class="card-img-top" alt="Modelo 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Oficina</h5>
+            <p class="card-text">Funcionalidad y estilo profesional.</p>
+            <a href="#" class="btn btn-custom">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colores -->
+  <section id="colores" class="container py-5">
+    <h2 class="text-center mb-4">Colores Disponibles</h2>
+    <p class="text-center">Ofrecemos una amplia gama de tonos de madera y acabados personalizados.</p>
+  </section>
+
+  <!-- Maderas -->
+  <section id="maderas" class="container py-5">
+    <h2 class="text-center mb-4">Tipos de Maderas</h2>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Roble</li>
+      <li class="list-group-item">Nogal</li>
+      <li class="list-group-item">Pino</li>
+      <li class="list-group-item">Cedro</li>
+    </ul>
+  </section>
+
+  <!-- Local -->
+  <section id="local" class="container py-5">
+    <h2 class="text-center mb-4">Nuestro Local</h2>
+    <div class="ratio ratio-16x9">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="container py-5">
+    <h2 class="text-center mb-4">Contáctanos</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Nombre" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Correo" required>
+      </div>
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Mensaje" required></textarea>
+      </div>
+      <div class="col-12 text-center">
+        <button class="btn btn-custom px-5" type="submit">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <p>&copy; 2025 Amoblados VGB | Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
